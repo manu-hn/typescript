@@ -25,9 +25,8 @@ TypeScript is a programming language that's very similar to JavaScript, but with
 
 - with parameter and no return type
   syntax :
-- function functionName( variableName : type ){ } 
+- function functionName( variableName : type ){ }
 - ![WithoutParameter](./Functions/screenshots/without-return-type.png)
-
 
 - with parameter and with return type
 - syntax :
@@ -38,7 +37,7 @@ TypeScript is a programming language that's very similar to JavaScript, but with
 - ![ArrowFunction](./Functions/screenshots/arrow%20function%20with%20return%20type.png)
 
 - Object as return type
-![ObjectAsReturnType](./Functions/screenshots/object-as-retyrn-type.png)
+  ![ObjectAsReturnType](./Functions/screenshots/object-as-retyrn-type.png)
 
 #### Types
 
@@ -53,11 +52,51 @@ TypeScript is a programming language that's very similar to JavaScript, but with
 
 * Note : Every type must be declared in lowercase
 
-
 ### Type Aliases
 
 #### `type` keyword
+
 - While working with object we can annotate the types directly but we can also make them refer a single name instead of writing annotation every type
 - here we use `type` keyword
 
--![type](./Objects/screenshots/type-keyword.png)  
+-![type](./Objects/screenshots/type-keyword.png)
+
+### Arrays
+
+- defining array
+- `const arrayName : type [] = arrayValue`
+
+- ![ArrayType1](./Arrays/screenshots/array%201.png)
+
+- `const arrayName : Array<type> = arrayValue` ~ Generics
+
+- ![ArrayType2](./Arrays/screenshots/array%202.png)
+
+- `const arrayName : number[][] = [ [ 1, 2, 3], [4, 5, 6]]`
+
+- ![ArrayType1](./Arrays/screenshots/array%203%202d.png)
+
+### Union
+
+- `union` (`|`) is way to declare a type that can hold different types of values.
+
+- usage of union
+
+1. ![Type](./Unions/screenshots/union1.png);
+   <br />
+   <br />
+
+2. ![Type](./Unions/screenshots/union2.png);
+   <br />
+   <br />
+3. ![Type](./Unions/screenshots/union3.png);
+
+### Tuples
+
+- In TypeScript, tuples are a data structure that allow you to store a fixed number of elements of different types in a specific order.
+
+* Fixed Size: Unlike arrays where you can add or remove elements freely, tuples have a fixed size. Once defined, you can't change the number of elements in a tuple.
+
+* Ordered Elements: Each element in a tuple has a specific position or index, just like in arrays. This means you can access elements by their index number.
+
+* Different Types: Unlike arrays where all elements typically have the same type, each element in a tuple can have a different type. For example, the first element can be a number, the second a string, and so on.
